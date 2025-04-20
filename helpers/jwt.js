@@ -1,6 +1,6 @@
 const { sign, verify } = require("jsonwebtoken");
 
-const JWT_SECRET=ini-rahasia
+const JWT_SECRET = "ini-rahasia"
 
 const signToken = ({ id }) => {
     return sign({ id }, JWT_SECRET)
