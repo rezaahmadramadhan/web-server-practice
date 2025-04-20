@@ -1,0 +1,32 @@
+{
+  "name": "slc01-rezaahmadramadhan",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12361711&assignment_repo_type=AssignmentRepo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H8-FSJS-P2S6/slc01-rezaahmadramadhan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H8-FSJS-P2S6/slc01-rezaahmadramadhan/issues"
+  },
+  "homepage": "https://github.com/H8-FSJS-P2S6/slc01-rezaahmadramadhan#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.14.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2"
+  }
+}
