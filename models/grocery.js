@@ -63,6 +63,8 @@ module.exports = (sequelize, DataTypes) => {
         model: "Users",
         key: "id"
       },
+      onDelete: 'CASCADE',
+      onUpdate: 'CASCADE',
       allowNull: false,
       validate: {
         notNull: {
