@@ -4,21 +4,71 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Grocery extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
-      // define association here
+      Grocery.belongsTo(models.User)
     }
   }
   Grocery.init({
-    title: DataTypes.STRING,
-    price: DataTypes.INTEGER,
-    tag: DataTypes.STRING,
-    imageUrl: DataTypes.STRING,
-    UserId: DataTypes.INTEGER
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Title is required"
+        },
+        notEmpty: {
+          msg: "Title is required"
+        }
+      }
+    },
+    price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Price is required"
+        },
+        notEmpty: {
+          msg: "Price is required"
+        }
+      }
+    },
+    tag: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Tag is required"
+        },
+        notEmpty: {
+          msg: "Tag is required"
+        }
+      }
+    },
+    imageUrl: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Image URL is required"
+        },
+        notEmpty: {
+          msg: "Image URL is required"
+        }
+      }
+    },
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "User ID is required"
+        },
+        notEmpty: {
+          msg: "User ID is required"
+        }
+      }
+    }
   }, {
     sequelize,
     modelName: 'Grocery',
